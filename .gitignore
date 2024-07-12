@@ -1,0 +1,21 @@
+# General
+*.log
+*.tmp
+*.env
+
+# IDE and OS specific
+.vscode/*
+!.vscode/settings.json  # Optional, keep your VS Code settings if needed
+.idea/*
+
+# Testing
+__pycache__/
+/tests/  # Adjust the path if your tests are in a different folder
+
+# Build and distribution
+/dist/
+/build/
+
+# Package managers
+node_modules/
+/package-lock.json  # Optional, keep for package-lock.json if using npm 5+
