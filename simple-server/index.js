@@ -9,10 +9,10 @@ const about = fs.readFileSync('./about.html')
 
 const server = http.createServer((req, res) => {
     console.log(req.url)
-    url=req.url;                //so that the returning resquet can be the new url
+    url=req.url;                // so that the returning resquet can be the new url
     res.statusCode = 200;
     res.setHeader('Content-Type', 'text/html');
-    if(url=='/'){                           //if esle ladder fro diffent pages
+    if(url=='/'){                           // if esle ladder fro diffent pages
         res.end(home);
     }
     else if(url=='/chat'){
