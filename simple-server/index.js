@@ -1,4 +1,4 @@
-const http = require('http');
+const http = require('http');       
 const fs = require('fs');
 
 const hostname = '127.0.0.1';
@@ -9,10 +9,10 @@ const about = fs.readFileSync('./about.html')
 
 const server = http.createServer((req, res) => {
     console.log(req.url)
-    url=req.url;
+    url=req.url;                //so that the returning resquet can be the new url
     res.statusCode = 200;
     res.setHeader('Content-Type', 'text/html');
-    if(url=='/'){
+    if(url=='/'){                           //if esle ladder fro diffent pages
         res.end(home);
     }
     else if(url=='/chat'){
