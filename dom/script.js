@@ -17,8 +17,26 @@ document.querySelectorAll(".box").forEach(e=>{          //loop to iterate all el
 
 
 document.getElementsByTagName("div")
-*/
+
 
 ele.matches("exp")   //to check if element matches or not   ele==exp
 ele.closest("exp")   //to find the closest from it          ele near to exp 
 ele.contains("exp")     // to check if ele contains exp       exp in ele or not
+
+
+//reduce funaction
+
+let a = 5
+
+function factorial(number){
+    let arr = Array.from(Array(number+1).keys())
+    let c = arr.slice(1,).reduce((a,b)=>{
+        return a*b
+    })
+    return c
+}
+
+factorial(a)
+
+*/
+
